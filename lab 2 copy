@@ -1,0 +1,83 @@
+ import time
+from random import randint
+start = time.time()
+a1 = [random.randint(1,1000000) for b in range (50)]
+print(len(a1))
+a1.copy()
+end = time.time()
+print(end - start)
+time1 = end - start
+
+
+start1 = time.time()
+a2 = [random.randint(1,1000000) for b in range (100)]
+print(len(a2))
+a2.copy()
+end1 = time.time()
+print(end1 - start1)
+time2 = end1 - start1
+
+
+start2 = time.time()
+a3 = [random.randint(1,1000000) for b in range (500)]
+print(len(a3))
+a3.copy()
+end2 = time.time()
+print(end2 - start2)
+time3 = end2 - start2 
+
+start3 = time.time()
+a4 = [random.randint(1,1000000) for b in range (1000)]
+print(len(a4))
+a4.copy()
+end3 = time.time()
+print(end3 - start3)
+time4 = end3  - start3
+
+start4 = time.time()
+a5 = [random.randint(1,1000000) for b in range (2000)]
+print(len(a4))
+a5.copy()
+end4 = time.time()
+print(end4 - start4)
+time5 = end4  - start4
+
+start5 = time.time()
+a6 = [random.randint(1,1000000) for b in range (5000)]
+print(len(a6))
+a6.copy()
+end5 = time.time()
+print(end5 - start5)
+time6 = end5  - start5
+
+
+start6 = time.time()
+a7 = [random.randint(1,1000000) for b in range (10000)]
+print(len(a7))
+a7.copy()
+end6 = time.time()
+print(end6 - start6)
+time7 = end6  - start6
+
+start7 = time.time()
+a8 = [random.randint(1,1000000) for b in range (50000)]
+print(len(a8))
+a8.copy()
+end7 = time.time()
+print(end5 - start5)
+time8 = end7  - start7
+
+start8 = time.time()
+a9 = [random.randint(1,1000000) for b in range (100000)]
+print(len(a9))
+a9.copy()
+end8 = time.time()
+print(end8 - start8)
+time9 = end8  - start8
+
+
+
+%matplotlib
+import matplotlib.pyplot as plt
+plt.plot ([50,100,500,1000,2000,5000,10000,100000], [time1,time2,time3,time4,time5,time6,time7,time8,time9])
+plt.show()
