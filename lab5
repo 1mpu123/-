@@ -1,0 +1,18 @@
+import random
+tries = 0
+number = random.randint(1, 50)
+while tries < 6:
+    guess = int(input('Enter the number : '))
+    tries += 1
+    if guess < number:
+        print('Unfortunately your number is too low.')
+
+    if number < guess:
+        print('(too high)')
+    if guess == number:
+        print('Congratulations you won')
+        break
+    if guess != number and tries == 6:
+        print('Unfortunately u lose')
+
+        break
